@@ -1,0 +1,50 @@
+:root {
+  --editor-bg: #eee;
+  --editor-border: #3f87a6;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.container
+{
+  height:92vh ;
+  width:100%;
+  display:flex;
+}
+.code-area {
+  display: flex;
+  flex-direction:column;
+  padding-bottom :1em;
+  width: 50%;
+}
+.head {
+  background-color:#acacac;
+  margin:1em;
+  padding :0.5em;
+}
+.code-area textarea {
+  resize: none;
+  background-color: black;
+  color:white;
+  outline: none;
+  width: 100%;
+  height: 33.33%;
+  font-size: 14px;
+}
+.preview-area {
+  width: 50%;
+  padding-left:2em;
+  padding-bottom:1em;
+}
+.preview-area iframe {
+  width: 100%;
+  height: 100%;
+
+  border-color: #5ba2ff;
+}

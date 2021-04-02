@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="editor_style.css">
+    <script type="text/javascript" src="editor_js.js"></script>
+    <script src="FileSaver.js"></script>
+    <title>Code Editor</title>
+</head>
+<header class="head" >
+    <button type="button" name="login" value="save" onclick="saveDynamicDataToFile();" class="btn btn-primary">SAVE</button>
+    <button type="button" class="btn btn-success" onclick="showPreview()">RUN</button>
+    <button type="button" class="btn btn-warning" onClick="history.go(0)" VALUE="Refresh">CLEAR</button>
+</header>
+<body>
+<form>    
+<div class="container">
+    <div class="code-area">
+        <textarea id="htmlcode" placeholder="HTML Code"></textarea>
+        <textarea id="csscode" placeholder="CSS Code"></textarea>
+        <textarea id="jscode" placeholder="JS Code"></textarea>
+    </div>
+
+    <div class="preview-area">
+        <iframe  id="preview-window"></iframe>
+    </div>
+</div> 
+</form>   
+</body>
+</html>
